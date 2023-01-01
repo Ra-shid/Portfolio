@@ -1,5 +1,8 @@
-*{
+      *{
 box-sizing: border-boxing;
+}
+h1 {
+    text-align: center;
 }
 section{
 position:relative;
@@ -11,21 +14,22 @@ color:#fff;
 position:absolute;
 top:0;
 right:0;
+padding: 0 5%;
 }
 
-.row .section-title-region:nth-of-type(1){
+.row section:nth-child(1) .section-title-region{
 background-color:red;
 color: #000;
 font-weight:bold;
 }
 
-.row .section-title-region:nth-of-type(2){
+.row section:nth-child(2) .section-title-region{
 background-color:blue;
 color:#fff;
 font-weight:bold;
 }
 
-.row .section-title-region:nth-of-type(3){
+.row section:nth-child(3) .section-title-region{
 background-color:green;
 color:#000;
 font-weight:bold;
@@ -35,7 +39,7 @@ font-weight:bold;
 
 
 
-<!-- Desktop View -->
+/* <!-- Desktop View --> */
 @media only screen and (min-width: 992px){
 
 .row{
@@ -51,14 +55,14 @@ margin: 2% 5%;
 
 }
 
-<!-- Tablet View -->
+/* <!-- Tablet View --> */
 @media screen (min-width: 768px) and (max-width: 991px){
 
 .row{
-display:flex;
-flex-wrap: wrap
-width:100%;
-padding:0 10px;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+padding: 0 10px;
 }
 section{
 width: Calc(100% / 2);
@@ -67,12 +71,12 @@ margin: 2% 5%;
 }
 }
 
-<!-- Mobile View -->
+/* <!-- Mobile View --> */
 @media only screen and (max-width: 767px){
 
 .row{
 display:flex;
-flex-wrap: wrap
+flex-wrap: wrap;
 width:100%;
 padding:0 10px;
 }
