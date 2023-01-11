@@ -1,29 +1,932 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet"  href="./style.css">
-    <title></title>
-    
-  </head>
-  <body>
-    <h1> Page Heading </h1>  
-    <div class="row">
-    
-      <section>
-        <div class="section-title-region">Chicken</div>
-        <p> Lorem ipsum </p>
-      </section>
-      <section>
-        <div class="section-title-region">Beef</div>
-        <p> Lorem ipsum </p>
-      </section>
-      <section>
-        <div class="section-title-region">Fish</div>
-        <p> Lorem ipsum </p>
-      </section>
-      
-    </div>
-  
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of the website</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!--------------------------------==== HEADER SECTION ====-------------------------------->
+    <header id="header">
+        <div class="flex-column">
+            <div class="profile">
+                <img src="img/profile.jpg" alt class="img-fluid rounded-circle">
+                <h1 class="text-name">
+                    <a href="index.html">Name</a>
+                </h1>
+                <div class="social-links text-center">
+                    <a href="#" class="facebook social-icons"><i class="box-facebook"></i></a>
+                    <a href="#" class="instagram social-icons"><i class="box-instagram"></i></a>
+                    <a href="#" class="linkedin social-icons"><i class="box-linkedin"></i></a>
+                    <a href="#" class="twitter social-icons"><i class="box-twitter"></i></a>
+                    <a href="#" class="Youtube social-icons"><i class="box-Youtube  "></i></a>
+
+                </div>
+            </div>
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scroll active"><i class="box box-home"></i><span>Home</span></a>
+                    </li>
+                    <li><a href="#about" class="nav-link scroll active"><i
+                                class="box box-about"></i><span>About</span></a></li>
+                    <li><a href="#resume" class="nav-link scroll active"><i
+                                class="box box-resume"></i><span>Resume</span></a></li>
+                    <li><a href="#portfolio" class="nav-link scroll active"><i
+                                class="box box-portfolio"></i><span>Portfolio</span></a></li>
+                    <li><a href="#services" class="nav-link scroll active"><i
+                                class="box box-services"></i><span>Services</span></a></li>
+                    <li><a href="#contact" class="nav-link scroll active"><i
+                                class="box box-contact"></i><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--------------==== END-OF-HEADER-SECTION ====--------------->
+
+    <!--------------------------------- INTRODUCTION WITH JS --------------------------------->
+    <section id="hero" class="flex-column justify-content-center align-items-center">
+        <div class="hero-container animate-text">
+            <h1>Name</h1>
+            <p>I'm <span class="typed"></span>
+            </p>
+        </div>
+    </section>
+    <!---------------------------- END OF INTRODUCTION WITH JS ------------------------------->
+    <main id="main">
+
+        <!---------------------------------- ABOUT SECTION ----------------------------------->
+        <section id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About</h2>
+                    <p class="about-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corporis nihil consequatur quam
+                        porro repudiandae quaerat, magnam, deserunt reprehenderit iure saepe nesciunt ipsa, dolorem aut!
+                        Corporis, vitae. Et, laborum facilis.
+                    </p>
+                </div>
+                <div class="about-section row">
+                    <div class="about-column-1"><img src="img/profile.jpg" class="about-img"></div>
+                    <div class="about-column-2">
+                        <h3>Skills that you posses</h3>
+                        <p class="skill-decs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni pariatur
+                            deserunt nihil possimus soluta in, optio officiis tenetur voluptatem ipsa rem? Tenetur neque
+                            natus nisi laboriosam alias quisquam ullam assumenda?
+                        </p>
+                        <div class="profile-history row">
+                            <div class="profile-history-column-1">
+                                <div class="about-list-1 row">
+                                    <div class="list-title">
+                                        <ul>
+                                            <li>DOB</li>
+                                            <li>WEBSITE</li>
+                                            <li>PHONE</li>
+                                            <li>CITY</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-value">
+                                        <ul>
+                                            <li>dd/mm/yyyy</li>
+                                            <li>www.mywebsite.com </li>
+                                            <li>+91 9876543210</li>
+                                            <li>city, Country</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-history-column-2">
+                                <div class="about-list-2 row">
+                                    <div class="list-title">
+                                        <ul>
+                                            <li>AGE</li>
+                                            <li>DEGREE</li>
+                                            <li>EMAIL</li>
+                                            <li>FREELANCE</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-value">
+                                        <ul>
+                                            <li>Yrs. old</li>
+                                            <li>Latest Qualification</li>
+                                            <li>email@mail.com</li>
+                                            <li>Available</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur hic
+                            incidunt optio sequi nam vitae fugiat illum fugit neque voluptate.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!------------------------------- END OF ABOUT SECTION ------------------------------->
+
+        <!---------------------------------- FACT SECTION ------------------------------------>
+        <section id="facts" class="facts">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Facts</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis ab ratione ut,
+                        possimus
+                        aliquam inventore vitae impedit voluptas, facilis quidem. Numquam temporibus eveniet adipisci
+                        aut
+                        dolor aliquid saepe iusto commodi veritatis ad, exercitationem molestiae molestias inventore
+                        dolorem
+                        expedita ea modi. Quibusdam quos repellendus inventore veritatis aut error, quae magnam
+                        accusantium
+                        ipsa modi animi ipsam, tenetur porro ipsum numquam repellat eaque laudantium quam quo tempora
+                        necessitatibus earum.
+                    </p>
+                </div>
+                <div class="row no-gutters">
+                    <div class="facts-col-lg-4 facts-col-md-2-col facts-sm-1">
+                        <div class="count-box">
+                            <i class="icon emoji-smile"></i>
+                            <span class="pure-counter">232</span>
+                            <p>
+                                <strong>Happy Clients</strong>
+                                "lorem ipsum"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="facts-col-lg-4 facts-col-md-2-col facts-sm-1">
+                        <div class="count-box">
+                            <i class="icon journal-richtext"></i>
+                            <span class="pure-counter">521</span>
+                            <p>
+                                <strong>Projects</strong>
+                                "Lorem ipsum dolor sit amet."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="facts-col-lg-4 facts-col-md-2-col facts-sm-1">
+                        <div class="count-box">
+                            <i class="icon headset"></i>
+                            <span class="pure-counter">1453</span>
+                            <p>
+                                <strong>Hours Of Support</strong>
+                                "Lorem ipsum dolor."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="facts-col-lg-4 facts-col-md-2-col facts-sm-1">
+                        <div class="count-box">
+                            <i class="icon people"></i>
+                            <span class="pure-counter">32</span>
+                            <p>
+                                <strong>Hard Workers</strong>
+                                "Lorem ipsum dolor."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!------------------------------- END OF FACT SECTION -------------------------------->
+
+        <!---------------------------------- SKILLs SECTION ---------------------------------->
+        <section id="skills" class="skills section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis ab ratione ut,
+                        possimus
+                        aliquam inventore vitae impedit voluptas, facilis quidem. Numquam temporibus eveniet adipisci
+                        aut
+                        dolor aliquid saepe iusto commodi veritatis ad, exercitationem molestiae molestias inventore
+                        dolorem
+                        expedita ea modi.
+                    </p>
+                </div>
+                <div class="row skill-content">
+                    <div class="column-1 skills-col-lg-4 skills-col-md-2-col skills-sm-1">
+
+                        <div class="progress">
+                            <span class="skill">HTML
+                                <i class="val">100%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">CSS
+                                <i class="val">90%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">JavaScript
+                                <i class="val">75%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="column-2 skills-col-lg-4 skills-col-md-2-col skills-sm-1">
+
+                        <div class="progress">
+                            <span class="skill">PHP
+                                <i class="val">80%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">CMS
+                                <i class="val">90%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">Photoshop
+                                <i class="val">55%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 55%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+        </section>
+        <!------------------------------ END OF SKILLs SECTION ------------------------------->
+
+        <!---------------------------------- RESUME SECTION ---------------------------------->
+        <section id="resume" class="resume">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis ab ratione ut,
+                        possimus
+                        aliquam inventore vitae impedit voluptas, facilis quidem. Numquam temporibus eveniet adipisci
+                        aut
+                        dolor aliquid saepe iusto commodi veritatis ad, exercitationem molestiae molestias inventore
+                        dolorem
+                        expedita ea modi. Quibusdam quos repellendus inventore veritatis aut error, quae magnam
+                        accusantium
+                        ipsa modi animi ipsam, tenetur porro ipsum numquam repellat eaque laudantium quam quo tempora
+                        necessitatibus earum. Obcaecati est facilis et tenetur vero, nihil quasi non atque dolores
+                        doloremque quidem praesentium iusto natus labore error molestias architecto, repellendus aliquam
+                        distinctio.
+                    </p>
+                </div>
+                <div class="row resume-content">
+                    <div class="column-1 resume-col-lg-4 resume-col-md-2-col resume-sm-1">
+
+                        <h3 class="resume-title">Sumary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Name </h4>
+                            <p>
+                                <em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi tenetur,
+                                    fugit blanditiis temporibus animi veniam quibusdam autem assumenda sequi.</em>
+                            </p>
+                            <ul>
+                                <li>Full Address</li>
+                                <li>Contact Number</li>
+                                <li>Email</li>
+                            </ul>
+                        </div>
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Master of Fine Arts & Graphic Design</h4>
+                            <h5>yyyy - yyyy</h5>
+                            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing.</em></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cupiditate similique
+                                corrupti quibusdam nisi deserunt provident porro quia doloribus harum.</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Bachelor of Fine Arts & Graphic Design</h4>
+                            <h5>yyyy - yyyy</h5>
+                            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing.</em></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cupiditate similique
+                                corrupti quibusdam nisi deserunt provident porro quia doloribus harum.</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-col-lg-4 resume-col-md-2-col resume-sm-1">
+
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Senior graphic design specialist </h4>
+                            <h5>yyyy - present</h5>
+                            <p>
+                                <em>Company, City, Country</em>
+                            </p>
+                            <ul>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore?</li>
+                                <li>Lorem ipsum dolor sit.
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi optio hic doloribus.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vel non!</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Graphic design specialist</h4>
+                            <h5>year - year</h5>
+                            <p>
+                                <em>Company Name, Company Address, Country</em>
+                            </p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!------------------------------ END OF RESUME SECTION ------------------------------->
+
+        <!--------------------------------- PORTFOLIO SECTION -------------------------------->
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis ab ratione ut,
+                        possimus
+                        aliquam inventore vitae impedit voluptas, facilis quidem. Numquam temporibus eveniet adipisci
+                        aut
+                        dolor aliquid saepe iusto commodi veritatis ad, exercitationem molestiae molestias inventore
+                        dolorem
+                        expedita ea modi.
+                    </p>
+                </div>
+                <div class="row portfolio-content">
+                    <div class="col-lg-4 col-md-2-col sm-1">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-app">App</li>
+                            <li data-filter=".filter-card">Card</li>
+                            <li data-filter=".filter-web">Web</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container ">
+                    <div class="portfolio-col-lg-4 portfolio-col-md-2-col portfolio-sm-1 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="img/profile.jpg" class="img-fluid">
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="page.html" class="portfolio-lightbox" title="App 1">
+                                <i class="plus-symbol"></i>
+                            </a>
+                            <a href="link.com" title="More Details">
+                                <i class="link-symbol"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-lg-4 portfolio-col-md-2-col portfolio-sm-1 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="img/profile.jpg" class="img-fluid">
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="page.html" class="portfolio-lightbox" title="App 1">
+                                <i class="plus-symbol"></i>
+                            </a>
+                            <a href="link.com" title="More Details">
+                                <i class="link-symbol"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-lg-4 portfolio-col-md-2-col portfolio-sm-1 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="img/profile.jpg" class="img-fluid">
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="page.html" class="portfolio-lightbox" title="App 1">
+                                <i class="plus-symbol"></i>
+                            </a>
+                            <a href="link.com" title="More Details">
+                                <i class="link-symbol"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-lg-4 portfolio-col-md-2-col portfolio-sm-1 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="img/profile.jpg" class="img-fluid">
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="page.html" class="portfolio-lightbox" title="App 1">
+                                <i class="plus-symbol"></i>
+                            </a>
+                            <a href="link.com" title="More Details">
+                                <i class="link-symbol"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-lg-4 portfolio-col-md-2-col portfolio-sm-1 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="img/profile.jpg" class="img-fluid">
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="page.html" class="portfolio-lightbox" title="App 1">
+                                <i class="plus-symbol"></i>
+                            </a>
+                            <a href="link.com" title="More Details">
+                                <i class="link-symbol"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-lg-4 portfolio-col-md-2-col portfolio-sm-1 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="img/profile.jpg" class="img-fluid">
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="page.html" class="portfolio-lightbox" title="App 1">
+                                <i class="plus-symbol"></i>
+                            </a>
+                            <a href="link.com" title="More Details">
+                                <i class="link-symbol"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-lg-4 portfolio-col-md-2-col portfolio-sm-1 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="img/profile.jpg" class="img-fluid">
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="page.html" class="portfolio-lightbox" title="App 1">
+                                <i class="plus-symbol"></i>
+                            </a>
+                            <a href="link.com" title="More Details">
+                                <i class="link-symbol"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-lg-4 portfolio-col-md-2-col portfolio-sm-1 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="img/profile.jpg" class="img-fluid">
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="page.html" class="portfolio-lightbox" title="App 1">
+                                <i class="plus-symbol"></i>
+                            </a>
+                            <a href="link.com" title="More Details">
+                                <i class="link-symbol"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------ END OF PORTFOLIO SECTION ----------------------------->
+
+        <!--------------------------------- SERVICES SECTION ---------------------------------->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Services</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis ab ratione ut,
+                        possimus
+                        aliquam inventore vitae impedit voluptas, facilis quidem. Numquam temporibus eveniet adipisci
+                        aut
+                        dolor aliquid saepe iusto commodi veritatis ad, exercitationem molestiae molestias inventore
+                        dolorem.
+                    </p>
+                </div>
+                <div class="row services-content">
+                    <div class="services-col-lg-4 services-col-md-2-col services-sm-1">
+                        <div class="icon">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <h4 class="services-title">
+                            <a href=>Lorem Ipsum</a>
+                        </h4>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi tenetur,
+                            fugit blanditiis temporibus animi veniam quibusdam autem assumenda sequi.
+                        </p>
+                    </div>
+                    <div class="services-col-lg-4 services-col-md-2-col services-sm-1">
+                        <div class="icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h4 class="services-title">
+                            <a href=>Lorem Ipsum</a>
+                        </h4>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi tenetur,
+                            fugit blanditiis temporibus animi veniam quibusdam autem assumenda sequi.
+                        </p>
+                    </div>
+                    <div class="services-col-lg-4 services-col-md-2-col services-sm-1">
+                        <div class="icon">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <h4 class="services-title">
+                            <a href=>Lorem Ipsum</a>
+                        </h4>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi tenetur,
+                            fugit blanditiis temporibus animi veniam quibusdam autem assumenda sequi.
+                        </p>
+                    </div>
+                    <div class="services-col-lg-4 services-col-md-2-col services-sm-1">
+                        <div class="icon">
+                            <i class="bi bi-binoculars"></i>
+                        </div>
+                        <h4 class="services-title">
+                            <a href=>Lorem Ipsum</a>
+                        </h4>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi tenetur,
+                            fugit blanditiis temporibus animi veniam quibusdam autem assumenda sequi.
+                        </p>
+                    </div>
+                    <div class="services-col-lg-4 services-col-md-2-col services-sm-1">
+                        <div class="icon">
+                            <i class="bi bi-brightness-high"></i>
+                        </div>
+                        <h4 class="services-title">
+                            <a href=>Lorem Ipsum</a>
+                        </h4>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi tenetur,
+                            fugit blanditiis temporibus animi veniam quibusdam autem assumenda sequi.
+                        </p>
+                    </div>
+                    <div class="services-col-lg-4 services-col-md-2-col services-sm-1">
+                        <div class="icon">
+                            <i class="bi bi-calendar4-week"></i>
+                        </div>
+                        <h4 class="services-title">
+                            <a href=>Lorem Ipsum</a>
+                        </h4>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi tenetur,
+                            fugit blanditiis temporibus animi veniam quibusdam autem assumenda sequi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------------- END OF SERVICES SECTION ------------------------------->
+
+        <!--------------------------------- TESTIMONIALS SECTION -------------------------------->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Testimonials</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis ab ratione ut,
+                        possimus
+                        aliquam inventore vitae impedit voluptas, facilis quidem. Numquam temporibus eveniet adipisci
+                        aut.
+                    </p>
+                </div>
+                <div class="testimonials-slider swiper swiper-initialized swiper-horizontal">
+                    <div class="swiper-wrapper" id="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae veniam nesciunt
+                                    reiciendis deleniti et explicabo!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="img/profile.jpg" class="testimonial-img">
+                                <h3>Customer Name</h3>
+                                <h4>Designation of the person</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-slidder-bullet">
+                        <span class="pagination-bullets" id="slide-1"> </span>
+                        <span class="pagination-bullets" id="slide-2"> </span>
+                        <span class="pagination-bullets" id="slide-3"> </span>
+                        <span class="pagination-bullets" id="slide-4"> </span>
+                        <span class="pagination-bullets" id="slide-5"> </span>
+                        <span class="pagination-bullets" id="slide-6"> </span>
+                        <span class="pagination-bullets" id="slide-7"> </span>
+                        <span class="pagination-bullets" id="slide-8"> </span>
+                        <span class="pagination-bullets" id="slide-9"> </span>
+                        <span class="pagination-bullets" id="slide-10"> </span>
+                        <span class="pagination-bullets" id="slide-11"> </span>
+                        <span class="pagination-bullets" id="slide-12"> </span>
+                        <span class="pagination-bullets" id="slide-13"> </span>
+                        <span class="pagination-bullets" id="slide-14"> </span>
+                        <span class="pagination-bullets" id="slide-15"> </span>
+                        <span class="pagination-bullets" id="slide-16"> </span>
+                    </div>
+                </div>
+        </section>
+        <!------------------------------ END OF TESTIMONIALS SECTION ----------------------------->
+
+        <!--------------------------------- CONTACT SECTION -------------------------------->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis ab ratione ut,
+                        possimus
+                        aliquam inventore vitae impedit voluptas, facilis quidem. Numquam temporibus eveniet adipisci
+                        aut.
+                    </p>
+                </div>
+                <div class="row contact-details">
+                    <div class="align-item-stretch">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>Full Address</p>
+
+                            </div>
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email :</h4>
+                                <p>info@example.com</p>
+
+                            </div>
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>91 0011 0022</p>
+
+                            </div>
+                            <iframe src="https://www.google.com/maps/"></iframe>
+                        </div>
+                    </div>
+                    <div class="row align-item-stretch">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row contact-input">
+                                <div class="form-group form-col">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" required></input>
+                                </div>
+                                <div class="form-group form-col">
+                                    <label for="name">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Message</label>
+                                <textarea class="form-control" name="message" rows="10" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------ END OF CONTACT SECTION ----------------------------->
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".typed", {
+            strings: ["Developer", "Designer", "Freelancer", "Content-Creator"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
+
+</body>
+
 </html>
